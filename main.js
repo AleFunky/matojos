@@ -5,6 +5,11 @@ const CARPETA = "./matojos/"
 var img = document.getElementById("aa");
 img.src = srcCompleto(0);
 
+for (var i = 0; i < N_IMAGENES; i++) {
+    var imagensita = new Image();
+    imagensita.src = srcCompleto(i);
+}
+
 var hidden = false;
 
 var index = 0;
@@ -13,7 +18,6 @@ var presionado = false;
 
 document.addEventListener("keydown", (e) => {
     if (presionado) return;
-    
     
     if (e.code === "ArrowRight") {
         index++;
