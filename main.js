@@ -15,7 +15,7 @@ var hidden = false;
 var index = 0;
 
 var img = document.getElementById("aa");
-img.src = srcCompleto(index);
+img.src = imagenesPrecargadas[index].src;
 
 var presionado = false;
 
@@ -39,7 +39,7 @@ document.addEventListener("keydown", (e) => {
 
     presionado = true;
 
-    img.src = srcCompleto(index);
+    img.src = imagenesPrecargadas[index].src;
     console.log(index);
 });
 
