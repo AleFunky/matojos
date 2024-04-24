@@ -5,9 +5,12 @@ const CARPETA = "./matojos/"
 var img = document.getElementById("aa");
 img.src = srcCompleto(0);
 
+var imagenesPrecargadas = [];
+
 for (var i = 0; i < N_IMAGENES; i++) {
     var imagensita = new Image();
     imagensita.src = srcCompleto(i);
+    imagenesPrecargadas[i] = imagensita;
 }
 
 var hidden = false;
