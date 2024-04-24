@@ -1,4 +1,4 @@
-const N_IMAGENES = 8;
+const N_IMAGENES = 10;
 
 const CARPETA = "./matojos/"
 
