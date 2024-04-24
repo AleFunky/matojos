@@ -2,9 +2,6 @@ const N_IMAGENES = 10;
 
 const CARPETA = "./matojos/"
 
-var img = document.getElementById("aa");
-img.src = srcCompleto(0);
-
 var imagenesPrecargadas = [];
 
 for (var i = 0; i < N_IMAGENES; i++) {
@@ -16,6 +13,9 @@ for (var i = 0; i < N_IMAGENES; i++) {
 var hidden = false;
 
 var index = 0;
+
+var img = document.getElementById("aa");
+img.src = srcCompleto(index);
 
 var presionado = false;
 
